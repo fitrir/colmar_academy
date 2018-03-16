@@ -21,6 +21,10 @@ h2 {
     padding-bottom: 2rem;
 }
 
+h2.center {
+    text-align: center;
+}
+
 h3 {
     font-size: 1.5rem;
     font-weight: 700;
@@ -47,7 +51,7 @@ strong {
 }
 
 a img {
-    opacity: .8;
+    opacity: .9;
 }
 
 a img:hover {
@@ -89,7 +93,7 @@ header {
     top: 0;
     left: 0;
     right: 0;
-    background-color: ivory;
+    background-color: white;
     z-index: 1;
     opacity: .9;
     padding: 1rem 1.5rem;
@@ -135,12 +139,20 @@ section {
     display: flex;
 }
 
-section:nth-child(odd){
+section:nth-child(odd) {
     background-color: gainsboro;
 }
 
-section:nth-child(even){
+section:nth-child(even) {
     background-color: whitesmoke;
+}
+
+section:nth-child(3) {
+    padding: 2rem 3.5rem 0 3.5rem;
+}
+
+section:nth-child(1n+3) {
+    display: block;
 }
 
 .main-container {
@@ -204,6 +216,26 @@ section:nth-child(even){
     color: darkslategray;
 }
 
+/*----- Course Section -----*/
+#courses-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 100%;
+}
 
+.course {
+    width: 30%;
+    margin: 0 .5rem 2rem .5rem;
+    background-color: whitesmoke;
+}
 
+.course .content {
+    padding: 2rem 1rem;
+}
 
+.courses {
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    display: block;
+}
