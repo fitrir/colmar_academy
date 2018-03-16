@@ -39,31 +39,11 @@ a {
 }
 
 a:hover {
-    color: blue;
+    color: teal;
 }
 
 strong {
     font-weight: 700;
-}
-
-.button {
-    color: white;
-    background-color: #353638;
-    padding: 1.1rem;
-    font-size: 1rem;
-    font-family: 'Montserrat', sans-serif;
-    text-align: center;
-    margin-top: 3rem;
-}
-
-.button:hover {
-    background-color: black;
-}
-
-.read-more a {
-    color: blue;
-    display: block;
-    padding-top: .5rem;
 }
 
 a img {
@@ -72,6 +52,29 @@ a img {
 
 a img:hover {
     opacity: 1;
+}
+
+button {
+    color: ivory;
+    background-color: #353638;
+    padding: 1.1rem;
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    margin-top: 3rem;
+    border: none;
+    display: block;
+    width: 100%;
+}
+
+button:hover {
+    background-color: teal;
+}
+
+.read-more a {
+    color: teal;
+    display: block;
+    padding-top: .5rem;
 }
 
 .mobile {
@@ -84,10 +87,10 @@ header {
     top: 0;
     left: 0;
     right: 0;
-    background-color: white;
+    background-color: ivory;
     z-index: 1;
     opacity: .9;
-    margin: 1rem 1.5rem;
+    padding: 1rem 1.5rem;
 }
 
 header .desktop {
@@ -119,3 +122,42 @@ nav ul li {
     padding: 0 .5rem;
     text-transform: capitalize;
 }
+
+/*----- Main Section -----*/
+section {
+    padding: 1.5rem 2rem;
+    display: flex;
+    margin-top: 4rem;
+}
+
+section:nth-child(odd){
+    background-color: silver;
+}
+
+section:nth-child(even){
+    background-color: lightgray;
+}
+
+.main-container {
+    width: 60%;
+    padding-right: 1.5rem
+}
+
+.main-container img {
+    max-width: 100%;
+}
+
+.side-container {
+    width: 40%;
+}
+
+/*----- Banner Section -----*/
+#banner {
+    align-items: center;
+}
+
+#banner .side-container {
+    padding: 0 2rem;
+}
+
+
