@@ -8,7 +8,6 @@ html {
 h1 {
     font-size: 2.75rem;
     font-weight: 800;
-    text-transform: capitalize;
     line-height: 3.25rem;
     padding-bottom: 2rem;
 }
@@ -16,19 +15,13 @@ h1 {
 h2 {
     font-size: 2.5rem;
     font-weight: 800;
-    text-transform: capitalize;
     line-height: 3rem;
     padding-bottom: 2rem;
-}
-
-h2.center {
-    text-align: center;
 }
 
 h3 {
     font-size: 1.5rem;
     font-weight: 700;
-    text-transform: capitalize;
     line-height: 2rem;
     padding-bottom: .5rem;
 }
@@ -64,7 +57,6 @@ button {
     padding: 1.1rem;
     font-size: 1rem;
     font-family: 'Montserrat', sans-serif;
-    text-align: center;
     margin-top: 3rem;
     border: none;
     display: block;
@@ -75,7 +67,7 @@ button:hover {
     background-color: teal;
 }
 
-img {
+img, video {
     max-width: 100%;
 }
 
@@ -83,8 +75,21 @@ img {
     display: none;
 }
 
-.thumbnail {
-    width: 35%;
+.flex {
+    display: flex;
+}
+
+.grow {
+    flex-grow: 1;
+}
+
+.center {
+    text-align: center;
+}
+
+.side {
+    padding: 1rem;
+    align-items: center;
 }
 
 /*----- Header -----*/
@@ -99,13 +104,7 @@ header {
     padding: 1rem 1.5rem;
 }
 
-header .desktop {
-    display: flex;
-}
-
 #logo {
-    flex-grow: 1;
-    display: flex;
     align-items: center;
 }
 
@@ -115,28 +114,22 @@ header .desktop {
     font-size: 1.4rem;
 }
 
-nav {
-    display: flex;
-}
-
 nav ul {
-    display: flex;
     align-items: center;
 }
 
 nav ul li {
     padding: 0 .5rem;
-    text-transform: capitalize;
 }
 
 /*----- Main Section -----*/
 #main-section {
     margin-top: 4rem;
+    border-bottom: 2px solid gainsboro;
 }
 
 section {
     padding: 1.5rem 2rem;
-    display: flex;
 }
 
 section:nth-child(odd) {
@@ -168,6 +161,14 @@ section:nth-child(1n+3) {
     padding-bottom: 2rem;
 }
 
+.thumbnail {
+    width: 35%;
+}
+.side-content {
+    width: 65%;
+    padding-left: 1.5rem;
+}
+
 /*----- Banner Section -----*/
 #banner {
     align-items: center;
@@ -187,9 +188,6 @@ section:nth-child(1n+3) {
 }
 
 .info {
-    padding: 1rem;
-    display: flex;
-    align-items: center;
     border-bottom: 4px solid gainsboro;
 }
 
@@ -199,11 +197,6 @@ section:nth-child(1n+3) {
 
 .info:last-child {
     background-color: gainsboro;
-}
-
-.info .content {
-    width: 65%;
-    padding-left: 1.5rem;
 }
 
 .read-more a {
@@ -218,7 +211,6 @@ section:nth-child(1n+3) {
 
 /*----- Course Section -----*/
 #courses-content {
-    display: flex;
     flex-wrap: wrap;
     justify-content: center;
     max-width: 100%;
@@ -238,4 +230,20 @@ section:nth-child(1n+3) {
     text-transform: uppercase;
     margin-bottom: 1rem;
     display: block;
+}
+
+/*----- Thesis Section -----*/
+.thesis:first-child {
+    background-color: gainsboro;
+}
+
+/*----- Footer -----*/
+footer {
+    padding: 1rem 1.5rem;
+    background-color: whitesmoke;
+    font-size: .85rem;
+}
+
+#terms a {
+    padding: 0 .8rem;
 }
