@@ -241,6 +241,7 @@ section:nth-child(3) {
 
 section:nth-child(1n+3) {
     display: block;
+    padding: 2rem 1rem;
 }
 
 .main-container {
@@ -266,6 +267,10 @@ section:nth-child(1n+3) {
 }
 
 @media only screen and (max-width: 600px) {
+    #main-section {
+        border-bottom: 0;
+    }
+    
     section {
         padding: 0;
         border-bottom: 2px solid gainsboro;
@@ -276,7 +281,7 @@ section:nth-child(1n+3) {
     }
     
     section:nth-child(3) {
-        padding: 1rem;
+        padding: 2rem 1rem;
     }
     
     .main-container {
@@ -427,6 +432,16 @@ section:nth-child(1n+3) {
     background-color: gainsboro;
 }
 
+@media only screen and (max-width: 600px) {
+    #thesis {
+        padding-bottom: 1.5rem;    
+    }
+    
+    #thesis .main-container h2, #thesis p, #thesis .side-container {
+        display: none;
+    }
+}
+
 /*----- Footer -----*/
 footer {
     padding: 1rem 1.5rem;
@@ -436,4 +451,10 @@ footer {
 
 #terms a {
     padding: 0 .8rem;
+}
+
+@media only screen and (max-width: 490px) {
+    #terms {
+        display: none;
+    }
 }
