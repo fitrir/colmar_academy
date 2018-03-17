@@ -92,6 +92,73 @@ img, video {
     align-items: center;
 }
 
+@media only screen and (max-width: 1020px) {
+    h3 {
+        font-size: 1.2rem;
+        line-height: 1.7rem;
+    }
+}
+
+@media only screen and (max-width: 1005px) {    
+    h1, h2 {
+        font-size: 1.8rem;
+        line-height: 2.3rem;
+    }
+}
+
+@media only screen and (max-width: 775px) {
+    h1, h2 {
+        padding-bottom: 1rem;
+        font-size: 1.6rem;
+        line-height: 2.1rem;
+    }
+    
+    h3 {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+    
+    p {
+        font-size: .85rem;
+        line-height: 1.35rem;
+    }
+    
+    button {
+        margin-top: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 680px) {
+    h1, h2 {
+        font-size: 1.4rem;
+        line-height: 1.9rem;
+    }
+    
+    button {
+        margin-top: 0;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    h1, h2 {
+        font-size: 2rem;
+        line-height: 2.5rem;
+    }
+    
+    h3 {
+        font-size: 1.2rem;
+        line-height: 1.7rem;
+    }
+    
+    button {
+        margin-top: 1rem;
+    }
+    
+    .side {
+        padding: 0;
+    }
+}
+
 /*----- Header -----*/
 header {
     position: fixed;
@@ -120,6 +187,38 @@ nav ul {
 
 nav ul li {
     padding: 0 .5rem;
+}
+
+@media only screen and (max-width: 680px) {
+    #logo span {
+        font-size: 1rem;
+    }
+    
+    nav ul li {
+        font-size: .8rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    header .desktop {
+        display: none;
+    }
+    
+    header .mobile {
+        display: block;
+    }
+    
+    header .mobile ul {
+        width: 100%;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+@media only screen and (max-width: 295px) {
+    header.container {
+        margin: 0 .8rem;
+    }
 }
 
 /*----- Main Section -----*/
@@ -164,14 +263,50 @@ section:nth-child(1n+3) {
 .thumbnail {
     width: 35%;
 }
+
 .side-content {
     width: 65%;
     padding-left: 1.5rem;
 }
 
+@media only screen and (max-width: 600px) {
+    section {
+        padding: 0;
+        border-bottom: 2px solid gainsboro;
+    }
+    
+    section:nth-child(odd) {
+        background-color: whitesmoke;
+    }
+    
+    .main-container {
+        width: 100%;
+        padding-right: 0;
+    }
+    
+    .side-container {
+        width: 90%;
+        padding: 2rem 1rem;
+    }
+    
+    .thumbnail {
+        width: 100%;
+    }
+    
+    .side-content {
+        padding: 1rem;
+    }
+}
+
 /*----- Banner Section -----*/
 #banner {
     align-items: center;
+}
+
+@media only screen and (max-width: 600px) {
+    #banner {
+        display: block;
+    }
 }
 
 /*----- Info Section -----*/
@@ -207,6 +342,34 @@ section:nth-child(1n+3) {
 
 .read-more a:hover {
     color: darkslategray;
+}
+
+@media only screen and (max-width: 600px) {
+    #info .main-container {
+        display: none;
+    }
+    
+    #info .side-container, .info {
+        border: none;
+    }
+    
+    .info {
+        display: block;
+        margin-bottom: 4rem;
+    }
+    
+    .info:last-child {
+        background: none;
+        margin-bottom: 0;
+    }
+    
+    .info .desktop {
+        display: none;
+    }
+    
+    .info .mobile {
+        display: block;
+    }
 }
 
 /*----- Course Section -----*/
