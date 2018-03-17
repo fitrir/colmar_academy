@@ -122,10 +122,6 @@ img, video {
         font-size: .85rem;
         line-height: 1.35rem;
     }
-    
-    button {
-        margin-top: 1.5rem;
-    }
 }
 
 @media only screen and (max-width: 680px) {
@@ -150,12 +146,20 @@ img, video {
         line-height: 1.7rem;
     }
     
-    button {
-        margin-top: 1rem;
-    }
-    
     .side {
         padding: 0;
+    }
+    
+    .desktop {
+        display: none;
+    }
+    
+    .mobile {
+        display: block;
+    }
+    
+    .button {
+        padding: .5rem;
     }
 }
 
@@ -200,14 +204,6 @@ nav ul li {
 }
 
 @media only screen and (max-width: 600px) {
-    header .desktop {
-        display: none;
-    }
-    
-    header .mobile {
-        display: block;
-    }
-    
     header .mobile ul {
         width: 100%;
         align-items: center;
@@ -275,8 +271,12 @@ section:nth-child(1n+3) {
         border-bottom: 2px solid gainsboro;
     }
     
-    section:nth-child(odd) {
+    section:nth-child(2n+3) {
         background-color: whitesmoke;
+    }
+    
+    section:nth-child(3) {
+        padding: 1rem;
     }
     
     .main-container {
@@ -285,8 +285,7 @@ section:nth-child(1n+3) {
     }
     
     .side-container {
-        width: 90%;
-        padding: 2rem 1rem;
+        width: 100%;
     }
     
     .thumbnail {
@@ -295,6 +294,7 @@ section:nth-child(1n+3) {
     
     .side-content {
         padding: 1rem;
+        width: 90%;
     }
 }
 
@@ -306,6 +306,18 @@ section:nth-child(1n+3) {
 @media only screen and (max-width: 600px) {
     #banner {
         display: block;
+    }
+    
+    #banner img {
+        padding-bottom: 1rem;
+    }
+    
+    #banner h1, #banner h3 {
+        padding: 1rem;
+    }
+    
+    #banner .button {
+       margin: .5rem 1rem 2rem 1rem;
     }
 }
 
@@ -355,20 +367,17 @@ section:nth-child(1n+3) {
     
     .info {
         display: block;
+        padding: 0 1rem;
         margin-bottom: 4rem;
+    }
+    
+    .info:first-child {
+        margin-top: 1rem;
     }
     
     .info:last-child {
         background: none;
-        margin-bottom: 0;
-    }
-    
-    .info .desktop {
-        display: none;
-    }
-    
-    .info .mobile {
-        display: block;
+        margin-bottom: 2rem;
     }
 }
 
@@ -393,6 +402,24 @@ section:nth-child(1n+3) {
     text-transform: uppercase;
     margin-bottom: 1rem;
     display: block;
+}
+
+@media only screen and (max-width: 600px) {
+    #courses button {
+        text-align: left;
+        background-color: gainsboro;
+        color: #353638;
+        font-weight: 700;
+    }
+    
+    #courses button:hover {
+        background-color: teal;
+        color: white;
+    }
+    
+    #courses .button:last-child {
+        margin-bottom: 1.5rem;
+    }
 }
 
 /*----- Thesis Section -----*/
